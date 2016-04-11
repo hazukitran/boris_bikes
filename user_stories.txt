@@ -1,0 +1,14 @@
+As a person,
+So that I can use a bike,
+I'd like a docking station to release a bike.
+
+As a person,
+So that I can use a good bike,
+I'd like to see if a bike is working
+
+OBJECTS           MESSAGES
+Person            use_bike
+                  session_start
+                  session_end
+Bike              bike_works?   ---> true/false
+Station           release_bike  ---> [Bike.new]
